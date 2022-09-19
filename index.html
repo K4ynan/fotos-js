@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide show</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        b=0
+        function slideshow() {
+            switch (b) {
+                case 0: foto.src = "imagens/elden.jpg";
+                break;
+                case 1: foto.src = "imagens/fl.jpg";
+                break;
+                case 2: foto.src = "imagens/pablo.jpg"
+                break;
+                case 3: foto.src = "imagens/porshe.jpg";
+                break;
+                case 4: foto.src = "imagens/rick.jpg";
+                b = -1;
+            }
+            b++;
+        }
+    </script>
+</head>
+<body onload="setInterval('slideshow()',2000)" ;>
+    <p><img src="imagens/rick.jpg" name="foto"></p>
+    
+</body>
+</html>
